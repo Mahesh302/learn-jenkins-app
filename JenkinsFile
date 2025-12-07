@@ -11,7 +11,8 @@ pipeline{
             steps{
                 sh '''
                 ls
-                ls -ls
+                ls -art
+                pwd
                 ls -lart
                 node -v
                 npm -v
