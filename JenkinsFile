@@ -31,7 +31,7 @@ pipeline{
             }
             steps{
                 sh '''
-                test -f build/index.html && echo "Test Passed"
+                test -f build/index.html && echo "Test Passed" || echo "Test Failed"
                 npm  test
                 '''
             }
